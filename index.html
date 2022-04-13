@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Two Pixels</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Two Pixels</h1>
+    <p>Pixels having fun while loading</p>
+    <div class="card-container">
+      <div class="card">
+        <div class="loader square-loader"> </div>
+      </div>
+      <div class="card">
+        <div class="square-loade"> </div>
+      </div>
+    </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+        $('.card').hover(
+             function(){ $(this).children().addClass('animate') },
+             function(){ $(this).children().removeClass('animate') }
+        );
+      </script>
+  </body>
+</html>
