@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Two Pixels</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -12,6 +15,7 @@
     <p>Pixels having fun while loading</p>
     <div class="card-container">
       <div class="card">
+        <h2>Tag, you’re it!</h2>
         <div class="loader square-loader"> </div>
       </div>
       <div class="card">
@@ -21,8 +25,8 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script>
         $('.card').hover(
-             function(){ $(this).children().addClass('animate') },
-             function(){ $(this).children().removeClass('animate') }
+             function(){ $(this).children('.loader').addClass('animate') },
+             function(){ $(this).children('.loader').removeClass('animate') }
         );
       </script>
   </body>
